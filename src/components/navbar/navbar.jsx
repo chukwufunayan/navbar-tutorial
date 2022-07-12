@@ -30,16 +30,17 @@ function Navbar() {
         alignItems={"center"}
         justifyContent={"space-between"}
       >
-        {/*number 1*/}
         <Stack columnGap={1} direction="row" alignItems="center">
-          <img src={flag} style={{ height: "35px", width: "45px" }} />
+          <img
+            alt="flag logo"
+            src={flag}
+            style={{ height: "35px", width: "45px" }}
+          />
           <h3>Funayan</h3>
         </Stack>
-        {/*number 2*/}
         <Box sx={{ display: { xs: "none", sm: "inline" } }}>
           <NavbarLinks />
         </Box>
-        {/*number 3*/}
         <Stack direction={"row"} columnGap={1} rowGap={1}>
           <ThemeButton themeMode={isLight} toggleTheme={toggleTheme} />
           <Button
